@@ -26,9 +26,7 @@ public class Ixigooffers {
 	@FindBy (xpath="//*[@id=\"login\"]/div/div[1]/div/div[2]/form/div[2]/button")
 	WebElement login;
 	
-	
-    @FindBy (xpath="//*[@id=\"header\"]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[3]/button/span")
-    WebElement clubvistara;
+
     
     @FindBy(xpath="//*[@id=\"header\"]/div[2]/div[2]/div[1]/div/div/div[2]/div/div[3]/div/div[1]/div/div[1]/div[5]/a")
     WebElement currentoffers;
@@ -60,13 +58,13 @@ public class Ixigooffers {
 	}
 	
     
-    public void clubvistarahover()
+    public void Ixigohover()
     {
     	WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(50));
-     	wait.until(ExpectedConditions.elementToBeClickable(clubvistara));
+     	wait.until(ExpectedConditions.elementToBeClickable(ixigo));
      	
     	Actions act =new Actions(driver);
-    	act.moveToElement(clubvistara);
+    	act.moveToElement(ixigo);
     	act.perform();
     }
     
