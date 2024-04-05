@@ -16,7 +16,7 @@ public class Ixigologintest extends Ixigobase {
 		
 	    Ixigologin ob=new Ixigologin(driver);
 		
-		String excel="C:\\Users\\DELL\\Desktop\\Book1.xlsx";
+		String excel="C:\\Users\\hp\\Desktop\\Book1.xlsx";
 		String sheet="Sheet1";
 		int rowcount=Excelhandleixigo.getrowcount(excel, sheet);
 		System.out.println("rowcount = "+rowcount);
